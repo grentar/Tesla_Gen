@@ -2,10 +2,11 @@
 #include <Arduino_ST7789.h>
 #include <SPI.h>
 
-#define TFT_DC    8
-#define TFT_RST   9
-#define TFT_MOSI  11
+#define TFT_DC    10
+#define TFT_RST   4
+#define TFT_MOSI  12
 #define TFT_SCLK  13
+
 
 #define SENSOR A0
 
