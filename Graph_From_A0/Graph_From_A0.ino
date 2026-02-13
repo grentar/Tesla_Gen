@@ -1,5 +1,5 @@
 #include <Adafruit_GFX.h>
-#include <Arduino_ST7789.h>
+#include <Tesla_IPS_ST7789.h>
 #include <SPI.h>
 
 #define TFT_DC    10
