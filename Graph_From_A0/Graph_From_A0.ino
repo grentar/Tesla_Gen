@@ -10,7 +10,7 @@
 
 #define SENSOR A0
 
-Arduino_ST7789 tft = Arduino_ST7789(TFT_DC, TFT_RST, TFT_MOSI, TFT_SCLK);
+IPS_display tft(TFT_DC, TFT_RST, TFT_MOSI, TFT_SCLK);
 
 #define SCREEN_W 240
 #define SCREEN_H 240
@@ -21,7 +21,7 @@ Arduino_ST7789 tft = Arduino_ST7789(TFT_DC, TFT_RST, TFT_MOSI, TFT_SCLK);
 int xPos = 0;
 
 void setup() {
-  tft.init(240, 240);
+  tft.begin();  
   tft.fillScreen(BLACK);
 
   drawUI();
